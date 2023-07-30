@@ -17,4 +17,4 @@ fftw:
 target_platform:
 - linux-64
 wcslib:
-- '7'
+- '8'
