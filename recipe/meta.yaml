@@ -12,7 +12,7 @@ source:
     - cfitsio_version.patch
 
 build:
-  number: 6
+  number: 7
   skip: true  # [win or osx]
   run_exports:
     # The ABI doesn't seem to change for minor or patch release,
@@ -23,8 +23,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
     - make
+    - pkg-config
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
   host:
