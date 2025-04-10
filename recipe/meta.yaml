@@ -12,7 +12,7 @@ source:
     - cfitsio_version.patch
 
 build:
-  number: 8
+  number: 9
   skip: true  # [win or osx]
   run_exports:
     # The ABI doesn't seem to change for minor or patch release,
