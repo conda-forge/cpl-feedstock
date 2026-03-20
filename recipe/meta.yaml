@@ -1,5 +1,5 @@
 {% set name = "cpl" %}
-{% set version = "7.3.2" %}
+{% set version = "7.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://ftp.eso.org/pub/dfs/pipelines/libraries//{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a50c265a8630e61606567d153d3c70025aa958a28473a2411585b96894be7720
+  sha256: f175a4e7a6935264ef49b39fddf45072c955dfe1c8d11923309f8cc774ba1d24
   patches:
     - cfitsio_version.patch
 
 build:
-  number: 10
+  number: 0
   skip: true  # [win or osx]
   run_exports:
     # The ABI doesn't seem to change for minor or patch release,
