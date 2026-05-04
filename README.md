@@ -151,5 +151,4 @@ Feedstock Maintainers
 
 * [@drbixx](https://github.com/drbixx/)
 * [@hugobuddel](https://github.com/hugobuddel/)
-* [@teake](https://github.com/teake/)
 
