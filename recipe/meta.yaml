@@ -12,7 +12,7 @@ source:
     - cfitsio_version.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or osx]
   run_exports:
     # The ABI doesn't seem to change for minor or patch release,
@@ -74,5 +74,4 @@ about:
 extra:
   recipe-maintainers:
     - drbixx
-    - teake
     - hugobuddel
