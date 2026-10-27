@@ -2,8 +2,8 @@
 {% set version = "7.4" %}
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
 
 source:
   url: https://ftp.eso.org/pub/dfs/pipelines/libraries//{{ name }}/{{ name }}-{{ version }}.tar.gz
