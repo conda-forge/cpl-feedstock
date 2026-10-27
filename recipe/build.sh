@@ -7,7 +7,7 @@
 #
 # For some reason it is necessary to specify --with-cfitsio since cfitsio 4.6.0.
 env LD_LIBRARY_PATH="${PREFIX}/lib:${LD_LIBRARY_PATH}" \
-  ./configure --prefix=${PREFIX} --with-cfitsio=${PREFIX}
+  ./configure --prefix=${PREFIX} --with-cfitsio=${PREFIX} --with-system-cext=no
 make
 make check
 make install
